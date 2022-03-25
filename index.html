@@ -1,0 +1,594 @@
+<html lang="en" 
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">  
+    <title> Technical Documentation Page</title>
+</head>
+
+<nav id="navbar">
+  <header>Html and Css Reference page</header>
+  <ul>
+    <li><a class="nav-link" href="#Intro">Intro</a></li>
+<li><a class="nav-link" href="#Basic_Html">Basic Html</a></li>
+<li><a class="nav-link" href="#Html5">Html5</a></li>
+<li><a class="nav-link" href="#Basic_CSS">Basic CSS</a></li>
+<li><a class="nav-link" href="#References">References</a></li>
+
+</ul>
+</nav>
+
+
+<main id="main-doc">
+<section class="main-section" id="Intro">
+    <header>Intro</header>
+<article>
+  <p> HTML (the Hypertext Markup Language) and CSS (Cascading Style Sheets) are two of the core technologies for building Web pages. HTML provides the structure of the page, CSS the (visual and aural) layout, for a variety of devices. Along with graphics and scripting, HTML and CSS are the basis of building Web pages and Web Applications. Learn more below about: </p>
+
+<ul>
+<li>
+Publish online documents with headings, text, tables, lists, photos, etc. 
+  </li>
+  <li>Retrieve online information via hypertext links, at the click of a button. </li>
+<li>Design forms for conducting transactions with remote services, for use in searching for information, making reservations, ordering products, etc. </li>
+<li>nclude spread-sheets, video clips, sound clips, and other applications directly in their documents. </li>
+  </ul>
+<p> CSS is the language for describing the presentation of Web pages, including colors, layout, and fonts. It allows one to adapt the presentation to different types of devices, such as large screens, small screens, or printers. CSS is independent of HTML and can be used with any XML-based markup language. The separation of HTML from CSS makes it easier to maintain sites, share style sheets across pages, and tailor pages to different environments. This is referred to as the separation of structure (or: content) from presentation. </p>
+
+<ul>
+<li>
+CSS stands for Cascading Style Sheets 
+  </li>
+  <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
+<li>CSS saves a lot of work. It can control the layout of multiple web pages all at once </li>
+<li>External stylesheets are stored in CSS files </li>
+  </ul>
+
+
+
+<section class="main-section" id="Basic_Html">
+  <header> Basic Html</header>
+<article>
+  <p> Hyper Text Markup Language, or better known as HTML, is a markup language to describe the structure of a web page much like a skeleton of a human body. An array of unique syntax of elements are used to organize and give information about the content to the web browser. Opening and closing tags are used on elements that surround content and gives meaning to it. There are different element tags that have different functions and uses that could include paragraphs, headers, links or lists.</p>
+  
+  <p> The Declaration | Comments | The Head | The Main/Body | Headings | Paragraphs | Lists | Divs | Images/Video | Anchors | Forms | Buttons</p>
+<h2 id="the_declaration">The Declaration</h2>
+        <p>At the start of your coding document you need to declare the language being used so the browser knows what version of HTML you're using and is able to read it. Most major browsers now support the latest installment, HTML5. Below is how you declare the language, in this case it'll be HTML5. This version is declared with the &lt;!DOCTYPE html&gt; tag. Don't forget the &lt;html&gt; tags that wrap around your html code!</a></p>
+          <code>
+&lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+    ... &lt;!-- Your code here --&gt;
+  &lt;/html&gt;
+          </code>
+        <br>
+        <h2 id="comments">Comments</h2>
+        <p>he HTML comment tag is used to add text to an HTML document without including that text in the Web page. When used in an ION Script page, HTML comment tags and the content they enclose are passed unchanged directly to the browser.
+
+The HTML comment tag consists of the opening tag <!-- and the closing tag -->. Text between <!-- and --> will not appear in the Web page, nor will it be evaluated by the ION Script parser: </a></p>
+        <code>
+&lt;!-- This is a single line comment --&gt;
+        
+&lt;!-- This is a 
+multiple line comment --&gt;
+        
+&lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+    &lt;body&gt; &lt;!-- Main Body --&gt;
+      &lt;div&gt; &lt;!-- Header Container --&gt;
+        &lt;h1&gt;Hello World!&lt;/h1&gt; &lt;!-- Heading Option 1 --&gt;
+        &lt;!-- &lt;h2&gt;Hello World!&lt;/h2&gt; Heading Option 2 --&gt;
+      &lt;/div&gt;
+    &lt;/body&gt;
+  &lt;/html&gt;
+        </code>
+        <br>
+     <h2 id="the_head">The Head</h2>
+        <p>The HTML head is the contents of the &lt;head&gt; element. Unlike the contents of the &lt;body&gt; element (which are displayed on the page when loaded in a browser), the head's content is not displayed on the page. Instead, the head's job is to contain metadata about the document.&lt;link&gt; ,&lt;meta&gt; ,&lt;title&gt; , and &lt;style&gt; usually go inside the &lt;head&gt; element</p>
+        <code>
+&lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+    &lt;head&gt;
+      &lt;title&gt;...&lt;/title&gt; &lt;!-- Your title here --&gt;
+      &lt;link...&gt; &lt;!-- Your link here --&gt;
+    &lt;/head&gt;
+  &lt;/html&gt;
+        </code>
+        <br>
+        <h2 id="the_main_body">The Main/Body</h2>
+        <p>The &lt;body&gt; tag defines the document's body.
+The &lt;body&gt; element contains all the contents of an HTML document, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.
+The &lt;body&gt; element contains all the contents of an HTML document, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.
+Note: There can only be one &lt;body&gt; element in an HTML document.</p>
+        <code>
+&lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+    &lt;head&gt;
+      ... &lt;!-- Your metadata here --&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+      ... &lt;!-- Some content here --&gt;
+      &lt;main&gt;
+        ... &lt;!-- Main content here --&gt;
+      &lt;/main&gt;
+      ... &lt;!-- Maybe some more content here --&gt;
+    &lt;/body&gt;
+  &lt;/html&gt;
+        </code>
+        <br>
+        <h2 id="headings">Headings</h2>
+        <p>HTML defines six levels of headings. A heading element implies all the font changes, paragraph breaks before and after, and any white space necessary to render the heading. The heading elements are H1, H2, H3, H4, H5, and H6 with H1 being the highest (or most important) level and H6 the least. For example. H1 is also the largest and H6 is the smallest</p>
+        <code id="heading_code">
+&lt;h1&gt;Heading 1&lt;/h1&gt;<h1>Heading 1</h1>
+&lt;h2&gt;Heading 2&lt;/h2&gt;<h2>Heading 2</h2>
+&lt;h3&gt;Heading 3&lt;/h3&gt;<h3>Heading 3</h3>
+&lt;h4&gt;Heading 4&lt;/h4&gt;<h4>Heading 4</h4>
+&lt;h5&gt;Heading 5&lt;/h5&gt;<h5>Heading 5</h5>
+&lt;h6&gt;Heading 6&lt;/h6&gt;<h6>Heading 6</h6>
+        </code>
+
+        <br>
+        <h2 id="paragraphs">Paragraphs</h2>
+        <p>Paragraphs are the preferred element for communicating text on websites. Just like in real writing, &lt;p&gt; tags organize and contain the meaning of the content within the body of the page.
+A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph.</p>
+        <code>
+&lt;body&gt;
+  &lt;main&gt;
+    &lt;h1&gt;Your Title Here&lt;/h1&gt;
+      &lt;p&gt;This is a paragraph. Your content and talking points go here.&lt;/p&gt;
+  &lt;/main&gt;
+&lt;/body&gt;
+        </code>
+        <br>
+        <h2 id="lists">Lists</h2>
+        <p>There are special elements that let you create lists and there are two kinds of lists that can be made. Unordered lists use the &lt;ul&gt; tag and is a general list that includes bullet points.
+An unordered list starts with the &lt;ul&gt; tag. Each list item starts with the &lt;li&gt; tag.
+
+The list items will be marked with bullets (small black circles) by default:</p>
+        <code>
+&lt;main&gt;
+  &lt;h1&gt;Your Title Here&lt;/h1&gt;
+    &lt;ul&gt;  &lt;!-- Unordered List --&gt;
+      &lt;li&gt;List item a&lt;/li&gt;
+      &lt;li&gt;List item b&lt;/li&gt;
+      &lt;li&gt;List item c&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;ol&gt;  &lt;!-- Ordered List --&gt;
+      &lt;li&gt;List item 1&lt;/li&gt;
+      &lt;li&gt;List item 2&lt;/li&gt;
+      &lt;li&gt;List item 3&lt;/li&gt;
+    &lt;/ol&gt;
+&lt;/main&gt;
+        </code>
+        <br>
+        <h2 id="divs">Divs</h2>
+        <p>The &lt;div&gt; HTML element is the generic container for flow content. It has no effect on the content or layout until styled in some way using CSS (e.g. styling is directly applied to it, or some kind of layout model like Flexbox is applied to its parent element).As a "pure" container, the &lt;div&gt; element does not inherently represent anything. Instead, it's used to group content so it can be easily styled using the class or id attributes, marking a section of a document as being written in a different language (using the lang attribute), and so on.</p>
+        <code>
+&lt;body&gt;
+  &lt;header&gt; 
+    ...  &lt;!-- Header contains title info --&gt;
+  &lt;/header&gt;
+  &lt;main&gt;
+    &lt;nav&gt;
+      ...  &lt;!-- Nav contains navigation links --&gt;    
+    &lt;/nav&gt;
+    &lt;aside&gt;
+      ...  &lt;!-- Aside contains side info and/or links --&gt;    
+    &lt;/aside&gt;
+    &lt;section&gt; 
+      ...   &lt;!-- Section contains a main part of the page --&gt;
+      &lt;article&gt;
+        ...  &lt;!-- Article contains worded content --&gt;    
+      &lt;/article&gt;
+    &lt;/section&gt;
+  &lt;/main&gt;
+  &lt;footer&gt;
+    ...   &lt;!-- Footer contains copyright info and links --&gt;      
+  &lt;/footer&gt;
+&lt;/body&gt;
+        </code>
+        <br>
+        <h2 id="images_video">Images/Video</h2>
+        <p>Images can be added to a website using the &lt;img&gt; element. This element uses the src attribute to specify the images URL to grab the media and display it on the page. The tag is self closing, so a closing tag is not needed for this one. All image elements must have an alt attribute, which is used for screen readers to improve accessibility and is displayed if the image fails to load. Below is an example of how to do this.</p>
+        <code>
+&lt;img src="https://www.the-images-URL-goes-here.com" alt="Text explaining what the image is."&gt;        
+        </code>
+        <p>Video clips can also be added to a website using the &lt;video&gt; element. Unlike the &lt;img&gt;, video uses a separate &lt;source&gt; tag that retrives the video's URL to be played. Videos also use height and width attributes within the &lt;video&gt; tag. Other optional attributes that can be added are controls, which allow the user to pause, play, increase/decrease the volume, etc, and autoplay which allows the video to automatically play when the user sees it on the page. Don't forget to add the type of video that is playing! The main types of video are mp4, webm and ogg. Below is how you would set up video in HTML.</p>
+        <code>
+&lt;video width="width-here" height="height-here" controls autoplay&gt;
+  &lt;source src="https://www.video-url-goes-here.com" type="video/mp4"&gt;
+  &lt;!-- Replace mp4 with webm or ogg when appropriate --&gt;
+&lt;/video&gt;
+        </code> 
+
+        <br>
+        <h2 id="anchors">Anchors</h2>
+        <p>Anchor elements, &lt;a&gt;, are used to link to content internally or externally from the current page. The href attribute is used to call the URL that links to what you want.The text between the opening tag and the closing tag is either the start or destination (or both) of a link There are many ways anchors can be used on the page, here are some examples.</p>
+        <code>
+&lt;!-- Anchor words to an external link --&gt;
+&lt;a href="https://www.link-url-goes-here.com"&gt;External Link&lt;/a&gt;
+          
+&lt;!-- Anchor that uses the target attribute to open up the link in a new tab --&gt;
+&lt;a href="https://www.link-url-goes-here.com" target="_blank"&gt;External Link in a New Tab&lt;/a&gt;
+          
+&lt;!-- Anchor an image to an external link --&gt;
+&lt;a href="https://www.link-url-goes-here.com"&gt;&lt;img src="https://www.image-url-goes-here.com" alt="Image description goes here"&gt;&lt;/a&gt;
+          
+&lt;!-- Anchor to jump to an internal section on the page --&gt;
+&lt;a href="#internal-section"&gt;Jump to internal section&lt;/a&gt;
+&lt;!-- On the section you want to jump to, add this line of code --&gt;
+&lt;a name="internal-section"&gt;&lt;/a&gt;
+          
+&lt;!-- Anchor with a dead link (#) for when stucture of the page is still needed without the specific URL yet --&gt;
+&lt;a href="#"&gt;Dead Link&lt;/a&gt;
+
+        </code>
+        <br>
+        <h2 id="forms">Forms</h2>
+        <p>An HTML form is a section of a document containing normal content, markup, special elements called controls (checkboxes, radio buttons, menus, etc.), and labels on those controls. Users generally "complete" a form by modifying its controls (entering text, selecting menu items, etc.), before submitting the form to an agent for processing (e.g., to a Web server, to a mail server, etc.).</p>
+        <code>
+&lt;!-- This is the form element. This directs the data to a server. --&gt;
+&lt;form action="https://www.send-data-to-this-server.com"&gt;&lt;/form&gt;
+          
+&lt;!-- Within forms, inputs can be placed to collect data. Here is a text field with a placeholder the user can see in the field. Filling out the field can be optional by adding required. --&gt;
+&lt;form action="https://www.send-data-to-this-server.com"&gt;&lt;input type="text" placeholder="Enter Text Here" required&gt;&lt;/form&gt;
+          
+&lt;!-- How will the page know to accept the data? With a submit button of course. --&gt;
+&lt;form action="https://www.send-data-to-this-server.com"&gt;
+  &lt;input type="text placeholder="Enter Text Here" required&gt;
+  &lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+        </code>
+
+        <br>
+        <h2 id="buttons">Buttons</h2>
+        <p>The &lt;button&gt; HTML element is an interactive element activated by a user with a mouse, keyboard, finger, voice command, or other assistive technology. Once activated, it then performs a programmable action, such as submitting a form or opening a dialog. The &lt;label&gt; element is used to nest the buttons in. A name attribute is used to correlate the button with the sent data in a form. How to set up a set of buttons on a page is shown below</p>
+        <code>
+&lt;!-- Radio: round buttons that are filled when selected --&gt;
+&lt;label&gt;
+  &lt;input type="radio" name="option1-option2"&gt;Option 1
+  &lt;input type="radio" name="option1-option2"&ft;Option 2
+&lt;/label&gt;
+          
+&lt;!-- Checkbox: square buttons that can be checked/unchecked --&gt;
+&lt;label&gt;
+  &lt;input type="checkbox" name="check1-check2"&gt;Check 1
+  &lt;input type="checkbox" name="check1-check2"&gt;Check 2
+&lt;/label&gt;
+          
+&lt;!-- Both radio and checkboxes can be preselected by adding checked --&gt;
+  &lt;label&gt;
+    &lt;input type="radio" name="option1-check2" checked&gt;Option 1
+    &lt;input type="checkbox" name"option1-check2" checked&gt;Check 2
+  &lt;/label&gt;
+        </code>
+      </article>
+    </section>
+<section class="main-section" id="Html5">
+  <header>Html5</header>
+<article>
+<p>While both HTML and HTML5 are hypertext markup languages, the main difference between them is that HTML5 is the latest version of HTML and supports more features such as multimedia, new tags and elements as well as new APIs. HTML5 is also a more mobile-friendly markup language of the two.HTML5 is the 5th version of HTML version 1.0 with support for more tags and features. Technically its termed HTML version 5.0, but colloquially it called HTML5.
+The latest version of Browsers like Safari, Opera, Chrome, and Firefox supports all most all features of HTML5. A web developer can use HTML5 for developing photo sites, web forums, and advanced mapping applications. The Full form of HTML5 is Hypertext Markup Language 5.
+</p>
+  </article>
+  </section>
+
+
+
+
+<section class="main-section" id="Basic_CSS">
+  <header> Basic CSS</header>
+<article>
+<p>Cascading Style Sheets, better known as CSS, tells the browser how to display the HTML framework on the page. This language controls the colors, fonts, positioning, spacing, sizing, decorations and transistions of every element. There are three main ways for these languages to communicate with each other to properly display a webpage. Inline styles can be directly written in HTML within each element with the style attribute. Another way CSS rules can be applied to HTML is by adding 
+  </p>
+<p>Styling | Import | Units | Comments | Colors |Fonts | Images | Borders | Background | Padding | Margin</P
+
+<br>
+        <h2 id="styling">Styling</h2>
+        <p>With CSS there are many properties that one can use to change the way an element looks on the page. This is all done in a separate .css file or inside the &lt;style&gt; elements using CSS selectors, classes, ids, and if need be, inline styles outside of the &lt;style&gt; elements. The order of these styling methods also indicate which take precedence when two or more are used. Classes override element selectors, ids over classes and if all else fails, inline styling and adding !important to a property have the final say in an elements style.</p>
+        <p>Here are the basic methods of incorporating CSS into a page.</p>
+        <code>
+/* Element Selector - selects all of the called element */
+&lt;style&gt;          
+p {
+  ...        
+}
+&lt;/style&gt;
+&lt;p&gt;...&lt;/p&gt;
+
+          
+/* Class Selector - selects all of the called class */
+&lt;style&gt;          
+.class1 {
+  ...          
+}
+&lt;/style&gt;
+&lt;h1 class="class1"&gt;...&lt;/h1&gt;   
+          
+
+/* Id Selector - selects elements with the unique id attribute */
+&lt;style&gt;
+#id1 {
+  ... !important         
+}
+&lt;/style&gt;
+&lt;div id="id1"&gt;...&lt;/div&gt;          
+          
+          
+/* Inline Selector - selects individual elements - NOT RECOMMENDED */
+&lt;h2 style="color: red;"&gt;...&lt;/h2&gt;          
+        </code>
+        <br>
+        <h2 id="import">Import</h2>
+        <p>Cascading Style Sheets (CSS) are the design foundation of most websites. It describes how the elements should be rendered on screen. This is where the CSS @import at-rule steps in to help. The @import rule tells the CSS engine to import an external style sheet into another style sheet. This allows style rules from a style sheet to be added to another style sheet. This rule can also be used in combination with media queries to import a style sheet based on the device type. The @import style rule is beneficial because it can be used to avoid duplicate style rules and even import specific styles based on the accessing device. The @import rule must be at the top of the style sheet.</p>
+        <code>
+&lt;style&gt;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+&lt;/style&gt;          
+        </code>
+        <br>
+        <h2 id="units">Units</h2>
+        <p>A CSS unit determines the size of a property you’re setting for an element or its content. For example, if you wanted to set the property margin of a paragraph, you would give it a specific value. This value includes the CSS unit When considering all the options for which units to use, it’s important to consider the two categories of units: absolute and relative.</p>
+<ul>
+  <li>Units that are “absolute” are the same size regardless of the parent element or window size. This means a property set with a value that has an absolute unit will be that size when looked at on a phone or on a large monitor (and everything in between!)</li>
+
+<li>Absolute units can be useful when working on a project where responsiveness is not being considered. For example, desktop apps that can’t be resized can be styled for the default dimensions. If the window doesn’t scale, you don’t need the content to either</li>
+
+<li>Relative units are useful for styling responsive sites because they scale relative to the parent or window size (depending on the unit).</li>
+        <code>
+&lt;style&gt;
+  html {
+    color: black;
+    width: 1000px;  /* Pixels */
+    length: 10in; /* Inches */
+    font-size: 2em; /* Ems */      
+    line-height: 1rem; /* Rems */      
+}
+&lt;/style&gt;          
+        </code>
+        <br>
+        <h2 id="csscomments">Comments</h2>
+        <p>A CSS comment is used to add explanatory notes to the code or to prevent the browser from interpreting specific parts of the style sheet. By design, comments have no effect on the layout of a document. Comments start with an opening tag of /* and close with a */ when finished.</p>
+        <code>
+&lt;style&gt;          
+/* This is a single line comment */
+          
+/* This is a
+multiple line comment */
+&lt;/style&gt;          
+        </code>
+        <br>
+        <h2 id="colors">Colors</h2>
+        <p>The color CSS property sets the foreground color value of an element's text and text decorations, and sets the &lt;currentcolor&gt; value. currentcolor may be used as an indirect value on other properties and is the default for other color properties, such as border-color. There is a lot that can be covered and said about colors using CSS so additional references are posted to further explore this vast topic.</p>
+        <code>
+/* Main Color Callouts */
+h1 {
+  color: red;        
+}
+.title-background {
+  color: black;        
+}  
+#special-font {
+  color: blue;       
+}  
+          
+ 
+/* Hex Codes */
+h1 {
+  color: #ff0000;        
+}
+.title-background {
+  color: #000000;        
+}  
+#special-font {
+  color: #0000ff;       
+}  
+          
+          
+/* Abbreviated Hex Codes */
+h1 {
+  color: #f00;        
+}
+.title-background {
+  color: #000;        
+}  
+#special-font {
+  color: #00f;       
+}  
+          
+          
+/* RGB Values */
+h1 {
+  color: rgb(255,0,0);        
+}
+.title-background {
+  color: rgb(0,0,0);        
+}  
+#special-font {
+  color: rgb(0,0,255);       
+}            
+        </code>
+        <br>
+        <h2 id="fonts">Fonts</h2>
+        <p>After the color, the font is probably the most basic property of a page. On this page I won't show any "tricks," but I will show the range of font variations that CSS allows.
+
+Since not all fonts are available on all computers (there are thousands of fonts, and most are not free), CSS provides a system of fallbacks. You list the font that you want first, then any fonts that might fill in for the first if it is unavailable, and you should end the list with a generic font, of which there are five: serif, sans-serif, monospace, cursive and fantasy.  Below are many examples how to change fonts in CSS.</p>
+        <code>
+/* Font Styles */
+body {
+  font-style: normal; /* The browser displays a normal font style, this is default */        
+}
+.font-style-1 {
+  font-style: italic; /* The browser displays an italic font style */
+}
+#special-font {
+  font-style: oblique; /* The browser displays an oblique font style */       
+}  
+          
+          
+/* Font Weights */
+html {
+  font-weight: normal; /* Defines normal characters, this is default */        
+}          
+.bold-font {
+  font-weight: bold; /* Defines thick characters */        
+}   
+#bolder-font {
+  font-weight: bolder; /* Defines thicker characters */        
+}   
+p {
+  font-weight: lighter; /* Defines lighter characters */       
+}   
+.thickness-selector {
+  font-weight: 100; /* 100 - 900 for custom thickness. 400 is the same as normal, 700 the same as bold */        
+}          
+          
+          
+/* Font Sizes */
+h1 {
+  font-size: 16px; /* Defines normal character size using pixels */        
+} 
+.em-size {
+  font-size: 2em; /* Defines font size in ems */        
+}          
+          
+          
+/* Font Families */
+h2 {
+  font-family: Sans-Serif; /* Defines the Sans-Serif font family */        
+}          
+.font-degrade {
+  font-family: Monospace, Sans-Serif; /* Defines what font to degrade to if the browser or local machine doesn't have the former in the library */   
+}          
+
+          
+/* Font In One Declaration */
+body {
+  font: italic bold 12px arial; /* (font-style font-weight font-size font-family) All four properties can be declared on one line of code */        
+}                   
+        </code>
+        <br>
+        <h2 id="images">Images</h2>
+        <p>CSS has properties called width and height that controls an elements width and height. Just like with fonts, pixels are used to control these aspects of the element.The image() CSS function defines an &lt;image&gt; in a similar fashion to the url() function, but with added functionality including specifying the image's directionality, displaying just a part of that image defined by a media fragment, and specifying a solid color as a fallback in case none of the specified images are able to be rendered. Below is an example of resizing an image.</p>
+        <code>
+&lt;style&gt;          
+  img {
+    width: 500px;
+    height: 500px;
+    max-width: 100%;
+    max-height: auto;      
+}
+&lt;/style&gt;          
+        </code>
+        <br>
+        <h2 id="borders">Borders</h2>
+        <p>Borders can be placed around elements to give it a more define presence or to keep objects orderly on the webpage. They come in many styles, shapes and sizes.The border shorthand CSS property sets an element's border. It sets the values of border-width, border-style, and border-color. Below are a few examples of using borders in CSS.</p>
+        <code>
+&lt;style&gt;          
+.border-example {
+  border-color: black; /* Defines the color of the border */ 
+  border-width: 7px; /* Defines the width of the border, in pixels */
+  border-style: solid; /* Defines the style of the border */  
+  border-radius: 10px; /* Defines how round the corners of the border are */
+  border-radius: 50%; /* When used as a percentage, border-radius creates a circular border around the element */        
+}
+          
+      
+.border-example-2 {
+  border: 5px dotted yellow; /* Border properties can be written on one like like shown */        
+}          
+&lt;/style&gt;          
+        </code>
+        <br>
+        <h2 id="background">Background</h2>
+        <p>The CSS background property defines the initial position of the background-image for an element. It is a shorthand property for setting the background-color, background-image, background-repeat, background-attachment, and background-position CSS properties.</p>
+        <code>
+&lt;style&gt;
+  .background-1 {
+    background-color: white; /* Specifies the background color */
+    background-image: url("https://www.image-url-here.com"); /* Specifies the url for the background image overlay */
+    background-repeat: no-repeat; /* Specifies how and if the background repeats */
+    background-position: right top; /* Specifies the position of the background on the screen */    
+}        
+  .background-2 {
+    background: red url("https://www.image-url-here.com") repeat-x bottom left; /* Like with many elements, all of the properties can be written on one line */     
+}        
+        </code>
+        <br>
+        <h2 id="padding">Padding</h2>
+        <p>Padding is used to create space around an element's content, inside of any defined borders.The CSS padding properties are used to generate space around an element's content, inside of any defined borders.
+
+With CSS, you have full control over the padding. There are properties for setting the padding for each side of an element (top, right, bottom, and left).</p>
+        <code>
+/* Normal padding */          
+.box1 {
+  padding: 15px;        
+}          
+          
+          
+/* Specific padding */
+.box2 {
+   padding-top: 15px;
+   padding-right: 7px;
+   padding-bottom: 3px;
+   padding-left: 20px;       
+}
+          
+          
+/* Shorthand clockwise notation */
+.box3 {
+   padding: 15px 7px 3px 20px;       
+}          
+        </code>
+        <br>
+        <h2 id="margin">Margin</h2>
+        <p>Margins are used to create space around elements, outside of any defined borders.The CSS margin properties are used to create space around elements, outside of any defined borders.
+
+With CSS, you have full control over the margins. There are properties for setting the margin for each side of an element (top, right, bottom, and left).</p>
+        <code>
+/* Normal margin */          
+.box1 {
+  margin: 15px;        
+}          
+          
+          
+/* Specific margin */
+.box2 {
+   margin-top: 15px;
+   margin-right: 7px;
+   margin-bottom: 3px;
+   margin-left: 20px;       
+}
+          
+          
+/* Shorthand clockwise notation */
+.box3 {
+   margin: 15px 7px 3px 20px;       
+}          
+        </code>
+        <br>
+
+  <section class="main-section" id="References">
+    <header>References</header>
+    <article>
+      <p>All the documentation in this page is taken from</p>
+      <ul>
+        <li>
+          
+          <a
+            href="https://www.w3schools.com"
+            target="_blank"
+            >W3Schools</a>
+        </li>
+<li>
+<a href="https://developer.mozilla.org/en-US/"
+target="_blank"
+   >MDN</a>
+        </li>
+      </ul>
+      </article>
+    </section>
+  </main>
+  </body>
